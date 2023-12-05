@@ -1,0 +1,51 @@
+/* src/App.css */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #61dafb;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #4fa3d1;
+}
+
+p {
+  margin-top: 10px;
+}

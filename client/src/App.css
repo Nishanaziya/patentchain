@@ -1,51 +1,131 @@
 /* src/App.css */
-.App {
-  text-align: center;
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark gray text */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #343a40; Dark gray background */
   padding: 20px;
-  color: white;
+  color: #fff; /* White text */
+  text-align: center;
+  height: 615px;
+  border: 1px solid #000;
 }
 
-h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+.form-container {
+  background-color: #fff; /* White background */
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  width: 80%; /* Adjust the width as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
-h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+h1, h2 {
+  color: #000; /* Bright blue heading text color */
 }
 
 label {
+  color: #000;
   display: block;
-  margin-bottom: 5px;
+  margin: 10px 0;
 }
 
 input {
-  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 4px;
 }
 
 button {
-  background-color: #61dafb;
-  color: white;
-  padding: 8px 12px;
+  background-color: #28a745; /* Green button background */
+  color: #fff; /* White text */
+  padding: 12px 20px;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 1em;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #4fa3d1;
+  background-color: #000; /* Darker green on hover */
 }
 
 p {
   margin-top: 10px;
+}
+
+/* Add additional styles as needed */
+
+.search_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* background: #2d3239; */
+  transition: 0.4s;
+  text-decoration: none;
+  background: none;
+  color: #000;
+  
+}
+
+
+.search_div:hover > .search_input {
+  width: 240px;
+  padding: 0 10px;
+  top: 50px;
+}
+
+.search_div:hover > .search_button {
+  background: #000;
+  color: #fff;
+  padding: 22px;
+  height: 48px;
+  width: 48px;
+}
+
+.search_div {
+  position: absolute;
+  /* background: #2d3239; */
+  background: #fff;
+  height: 40px;
+  border-radius: 30px;
+  padding: 8px;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.search_input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #000;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+  /* padding: 8px; */
 }
